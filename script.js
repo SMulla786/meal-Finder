@@ -1,7 +1,20 @@
 const searchInput = document.getElementById("meal_search");
 searchInput.addEventListener("keypress", (event) => {
   if (event.key == "Enter") {
-    getMeal();
+    if (searchInput.value == "Sadhana" || "sadhana") {
+      document.getElementById("meals").innerHTML = `<img
+    src="https://cdn-icons-png.flaticon.com/512/4289/4289414.png" alt="" height="200px;"width="300px">`;
+    } 
+     if (searchInput.value == "Manasi") {
+      document.getElementById("meals").innerHTML = `<p>bapya hai be tuz nav</p>`;
+    }
+    if (searchInput.value == "Bapya") {
+      document.getElementById("meals").innerHTML = `<img
+    src="https://photos.app.goo.gl/TxYPJrw9qGa2cG186" alt="" height="200px;"width="300px">`;
+    }
+    else {
+      getMeal();
+    }
   }
 });
 async function getMeal() {
