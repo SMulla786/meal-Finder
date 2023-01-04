@@ -1,7 +1,7 @@
 const searchInput = document.getElementById("meal_search");
 searchInput.addEventListener("keypress", (event) => {
   if (event.key == "Enter") {
-    if (searchInput.value == "Sadhana" || "sadhana") {
+    if (searchInput.value == "Sadhana") {
       document.getElementById("meals").innerHTML = `<img
     src="https://cdn-icons-png.flaticon.com/512/4289/4289414.png" alt="" height="200px;"width="300px">`;
     } 
