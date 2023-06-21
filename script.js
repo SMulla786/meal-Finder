@@ -23,9 +23,10 @@ async function getMeal() {
   );
   const textData = await streamData.text();
   const JsonData = JSON.parse(textData);
-  // console.log(JsonData)
+  
   let html = "";
   for (let i = 0; i < JsonData.meals.length; i++) {
+    console.log(JsonData.meals)
     html += `<img
     src="${JsonData.meals[i].strMealThumb}" alt="" height="200px;"width="300px">`;
   }
