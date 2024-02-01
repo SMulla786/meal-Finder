@@ -1,0 +1,33 @@
+<!-- <h1 ng-controller="infoController">hello</h1> -->
+<div
+  class="p-5 mb-4 bg-light rounded-3"
+  style="background-image: url({{meal[0].strMealThumb}});
+  background-size:cover; "
+>
+  <div
+    class="container-fluid py-5 mx-5"
+    style="
+      background-color: rgba(
+        rgb(255, 255, 255),
+        rgb(247, 247, 247),
+        rgb(249, 249, 252),
+        0.5
+      );
+    "
+  >
+    <h1 class="display-5 fw-bold text-capitalize">{{meal[0].strMeal}}</h1>
+
+    <!-- <button class="btn btn-primary btn-lg" type="button">Example button</button> -->
+  </div>
+</div>
+<div class="container">
+  <h3>Ingredients:</h3>
+  <div class="container-fluid">{{ingredients}}</div>
+  <h3>Recipe:</h3>
+  <div class="container-fluid">{{meal[0].strInstructions}}</div>
+  <a
+    href="{{meal[0].strYoutube}}"
+    class="btn btn-primary btn-lg text-center mt-5"
+    >Video instructions</a
+  >
+</div>
