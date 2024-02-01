@@ -57,11 +57,11 @@ angularApp.config([
   ($routeProvider) => {
     $routeProvider
       .when("/", {
-        templateUrl: "../templates/homeTemplate.html",
+        templateUrl: "../homeTemplate.html",
         // controller: "cardController",
       })
       .when("/meal-info/:id", {
-        templateUrl: "../templates/mealInfoTemplate.html",
+        templateUrl: "../mealInfoTemplate.html",
         controller: "infoController",
       })
       .otherwise({
